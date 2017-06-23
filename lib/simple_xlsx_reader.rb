@@ -13,7 +13,7 @@ rescue LoadError
   # Try loading rubyzip >= 1.0
   require 'rubyzip'
   require 'rubyzip/filesystem'
-  SimpleXlsxReader::Zip = Zip::File
+  SimpleXlsxReader::Zip = RubyZip::File
 end
 
 module SimpleXlsxReader
