@@ -11,8 +11,8 @@ begin
   SimpleXlsxReader::Zip = Zip::ZipFile
 rescue LoadError
   # Try loading rubyzip >= 1.0
-  require 'zip'
-  require 'zip/filesystem'
+  require 'rubyzip'
+  require 'rubyzip/filesystem'
   SimpleXlsxReader::Zip = Zip::File
 end
 
